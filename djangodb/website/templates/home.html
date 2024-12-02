@@ -1,1 +1,12 @@
-<h1>Hello World</h1>
+<h1>Members Database</h1>
+
+{% for item in all %}
+<br />
+<p><strong>Name:</strong> {{item.fname}} {{item.lname}}</p>
+<br />
+<p><strong>Email:</strong> {{item.email}}</p>
+<br />
+<p><strong>Age:</strong> {{item.age}}</p>
+<br />
+<hr />
+{% endfor %}
