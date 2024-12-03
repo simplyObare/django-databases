@@ -1,3 +1,4 @@
+{% extends "base.html" %} {% block content %}
 <h1>Members Database</h1>
 
 {% for item in all %}
@@ -9,4 +10,4 @@
 <p><strong>Age:</strong> {{item.age}}</p>
 <br />
 <hr />
-{% endfor %}
+{% endfor %} {% endblock content %}
