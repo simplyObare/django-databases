@@ -9,7 +9,7 @@
 </div>
 {% for item in all %}
 <br />
-<p><strong>Name:</strong> {{item.fname}} {{item.lname}}</p>
+<p><strong>Name:</strong> {{item.fname|capfirst}} {{item.lname|capfirst}}</p>
 <br />
 <p><strong>Email:</strong> {{item.email}}</p>
 <br />
