@@ -1,6 +1,12 @@
 {% extends "base.html" %} {% block content %}
-<h1>Members Database</h1>
-
+<div style="display: flex; align-items: center; justify-content: space-between">
+  <h1>Members Database</h1>
+  <button type="button" class="btn btn-success">
+    <a href="{% url 'join' %}" style="color: white; text-decoration: none"
+      >Join Us!</a
+    >
+  </button>
+</div>
 {% for item in all %}
 <br />
 <p><strong>Name:</strong> {{item.fname}} {{item.lname}}</p>
